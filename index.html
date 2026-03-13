@@ -16,7 +16,7 @@ body{
 margin:0;
 background:#000;
 font-family:'Poppins',sans-serif;
-color:#fff;
+color:white;
 line-height:1.7;
 }
 
@@ -31,69 +31,65 @@ color:#E05BB5;
 }
 
 h1{
-font-size:44px;
-margin-bottom:20px;
-}
-
-h2{
-font-size:32px;
-margin-bottom:30px;
-text-align:center;
-}
-
-h3{
-font-size:20px;
+font-size:48px;
 margin-bottom:10px;
+}
+
+.hero-title{
+font-size:26px;
+margin-bottom:20px;
+color:white;
+}
+
+.subtitle{
+color:#ccc;
+font-size:18px;
+max-width:700px;
+margin:auto;
 }
 
 .section{
 margin-top:90px;
 }
 
-.hero{
+h2{
 text-align:center;
-}
-
-.subtitle{
-font-size:18px;
-color:#ccc;
-max-width:750px;
-margin:auto;
+font-size:34px;
+margin-bottom:30px;
 }
 
 .button{
 display:inline-block;
-padding:16px 38px;
 background:#E05BB5;
-color:#fff;
-text-decoration:none;
+color:white;
+padding:16px 40px;
 border-radius:40px;
-margin:15px;
-font-size:16px;
+text-decoration:none;
 font-weight:500;
-transition:0.25s;
+margin-top:30px;
+transition:0.3s;
 }
 
 .button:hover{
-background:#ff79cf;
+background:#ff7ed6;
 transform:translateY(-3px);
-box-shadow:0 10px 25px rgba(224,91,181,0.5);
 }
 
-.button.secondary{
-background:transparent;
-border:2px solid #E05BB5;
+.center{
+text-align:center;
 }
 
 .trust{
-margin-top:20px;
-color:#aaa;
-font-size:14px;
+margin-top:25px;
+color:#bbb;
 }
 
 video{
 width:100%;
-border-radius:8px;
+max-width:800px;
+display:block;
+margin:auto;
+border-radius:10px;
 margin-top:30px;
 }
 
@@ -101,19 +97,20 @@ margin-top:30px;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:40px;
-margin-top:30px;
+margin-top:40px;
 }
 
 .card{
 background:#111;
-padding:25px;
+padding:30px;
 border-radius:10px;
 }
 
 .testimonial{
 border-left:4px solid #E05BB5;
 padding-left:20px;
-margin-bottom:30px;
+margin-bottom:35px;
+color:#ddd;
 }
 
 .pricing{
@@ -131,29 +128,59 @@ border-radius:12px;
 
 .price-card ul{
 padding-left:20px;
-color:#ccc;
+}
+
+.checks{
+margin-top:20px;
+}
+
+.checks div{
+margin:10px 0;
 }
 
 .urgency{
 background:#111;
-padding:30px;
-border-radius:12px;
+padding:35px;
+border-radius:10px;
 text-align:center;
+}
+
+.contact{
+text-align:center;
+margin-top:40px;
+}
+
+.contact p{
+margin:8px;
+color:#ccc;
 }
 
 footer{
 text-align:center;
 margin-top:80px;
-color:#777;
-font-size:14px;
+color:#666;
 }
 
-@media(max-width:768px){
+/* WHATSAPP */
 
-h1{
-font-size:32px;
+.whatsapp{
+position:fixed;
+left:20px;
+bottom:20px;
+z-index:999;
+text-align:center;
 }
 
+.whatsapp-text{
+background:#E05BB5;
+padding:6px 12px;
+border-radius:8px;
+font-size:12px;
+margin-bottom:6px;
+}
+
+.whatsapp img{
+width:55px;
 }
 
 </style>
@@ -166,9 +193,13 @@ font-size:32px;
 
 <!-- HERO -->
 
-<div class="hero">
+<div class="center">
 
-<h1>La música en directo que convierte tu evento en una fiesta inolvidable</h1>
+<h1>LIMITE POP PREMIUM</h1>
+
+<div class="hero-title">
+La música en directo que convierte tu evento en una fiesta inolvidable
+</div>
 
 <p class="subtitle">
 
@@ -180,21 +211,15 @@ Diseñamos la banda sonora perfecta para tu evento.
 
 </p>
 
-<a class="button" href="mailto:contacto@limitepop.com?subject=Consulta%20evento%20L%C3%ADmite%20Pop%20Premium&body=Hola,%0A%0AEstoy%20organizando%20un%20evento%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20L%C3%ADmite%20Pop%20Premium.%0A%0AFecha%20del%20evento:%0ALugar:%0AN%C3%BAmero%20de%20invitados:%0A%0AGracias.">
-
+<a class="button" href="mailto:contacto@limitepop.com?subject=Consulta%20evento%20Limite%20Pop%20Premium">
 Consultar disponibilidad
-
-</a>
-
-<a class="button secondary" href="#videos">
-
-Ver vídeos del grupo
-
 </a>
 
 <div class="trust">
 
-✔ Eventos privados &nbsp;&nbsp; ✔ Empresas &nbsp;&nbsp; ✔ Bodas y celebraciones
+✔ Eventos privados  
+✔ Empresas  
+✔ Bodas y celebraciones
 
 </div>
 
@@ -202,19 +227,11 @@ Ver vídeos del grupo
 
 <!-- VIDEO -->
 
-<div class="section" id="videos">
+<div class="section">
 
-<h2>Así suena un evento con Límite Pop</h2>
+<h2>Así suena Limite Pop Premium</h2>
 
-<p style="text-align:center;color:#ccc">
-
-Nada explica mejor lo que hacemos que verlo.
-
-<br>
-
-Momentos reales de nuestros conciertos en eventos privados.
-
-</p>
+<p class="center">Nada explica mejor lo que hacemos que verlo.</p>
 
 <video controls>
 
@@ -230,13 +247,16 @@ Momentos reales de nuestros conciertos en eventos privados.
 
 <h2>La música puede hacer que tu evento sea…</h2>
 
-<p style="text-align:center;max-width:700px;margin:auto;color:#ccc">
+<p class="center">
 
-Un éxito absoluto o simplemente una reunión más.
+Un éxito absoluto<br>
+o simplemente una reunión más.
 
 <br><br>
 
 Muchos grupos tocan canciones.
+
+<br><br>
 
 Pero pocos saben leer el ambiente y adaptarse al público.
 
@@ -256,7 +276,7 @@ Pero pocos saben leer el ambiente y adaptarse al público.
 
 <h3>🎵 Repertorio enorme</h3>
 
-<p>Más de 250 canciones de todas las épocas para conectar con invitados de cualquier edad.</p>
+Más de 250 canciones de todas las épocas para conectar con invitados de cualquier edad.
 
 </div>
 
@@ -264,7 +284,9 @@ Pero pocos saben leer el ambiente y adaptarse al público.
 
 <h3>🎵 Música a la carta</h3>
 
-<p>Puedes elegir las canciones que quieres escuchar. Diseñamos el repertorio perfecto para tu evento.</p>
+Puedes elegir las canciones que quieres escuchar en tu evento.
+
+Nosotros diseñamos el repertorio para que todo fluya.
 
 </div>
 
@@ -272,7 +294,9 @@ Pero pocos saben leer el ambiente y adaptarse al público.
 
 <h3>🎵 Experiencia en eventos privados</h3>
 
-<p>Sabemos cuándo empezar elegante y cuándo subir la energía para que el ambiente crezca de forma natural.</p>
+Casi 500 conciertos realizados en eventos privados nos han enseñado cómo construir el ambiente perfecto.
+
+Sabemos cuándo empezar elegante y cuándo subir la energía para que la fiesta crezca de forma natural.
 
 </div>
 
@@ -286,7 +310,7 @@ Pero pocos saben leer el ambiente y adaptarse al público.
 
 <h2>Imagina tu evento así</h2>
 
-<p style="text-align:center;max-width:700px;margin:auto;color:#ccc">
+<p class="center">
 
 Empieza el cóctel con música elegante.
 
@@ -316,15 +340,11 @@ Ese es el tipo de evento que creamos.
 
 <h2>Lo que pasa cuando empieza la música</h2>
 
-<div class="columns">
+<video controls>
 
-<video controls><source src="video2.mp4" type="video/mp4"></video>
+<source src="video2.mp4" type="video/mp4">
 
-<video controls><source src="video3.mp4" type="video/mp4"></video>
-
-<video controls><source src="video4.mp4" type="video/mp4"></video>
-
-</div>
+</video>
 
 </div>
 
@@ -340,13 +360,13 @@ Ese es el tipo de evento que creamos.
 
 <h3>ELEGANT LIVE</h3>
 
-<ul>
+<p>Música en directo elegante para eventos privados.</p>
 
+<ul>
 <li>90 minutos de actuación</li>
 <li>Repertorio adaptable</li>
 <li>Sonido profesional</li>
 <li>Ambiente elegante</li>
-
 </ul>
 
 </div>
@@ -355,13 +375,13 @@ Ese es el tipo de evento que creamos.
 
 <h3>PREMIUM EXPERIENCE ⭐</h3>
 
-<ul>
+<p>La opción más elegida.</p>
 
+<ul>
 <li>2 horas de actuación</li>
 <li>Música a la carta</li>
 <li>Diseño musical del evento</li>
 <li>Peticiones especiales</li>
-
 </ul>
 
 </div>
@@ -370,13 +390,13 @@ Ese es el tipo de evento que creamos.
 
 <h3>SIGNATURE PRIVATE SHOW</h3>
 
-<ul>
+<p>Experiencia musical exclusiva.</p>
 
-<li>Hasta 3 horas de actuación</li>
+<ul>
+<li>Hasta 2 horas de actuación</li>
 <li>Repertorio personalizado</li>
 <li>Diseño completo del evento</li>
 <li>Máxima personalización</li>
-
 </ul>
 
 </div>
@@ -413,15 +433,37 @@ Evento empresa
 
 </div>
 
+<div class="testimonial">
+
+⭐️⭐️⭐️⭐️⭐️  
+“Encantados con Limite Pop. Evento de empresa espectacular. Grandes músicos y repertorio increíble.”
+
+<br><br>
+
+Evento empresa – Madrid
+
 </div>
 
-<!-- DIFERENCIACIÓN -->
+<div class="testimonial">
+
+⭐️⭐️⭐️⭐️⭐️  
+“Increíble. Elegimos entre muchas opciones y desde que los escuchamos no tuvimos ninguna duda.”
+
+<br><br>
+
+Cumpleaños
+
+</div>
+
+</div>
+
+<!-- DIFERENCIACION -->
 
 <div class="section">
 
 <h2>No somos un grupo de versiones más</h2>
 
-<p style="text-align:center;max-width:700px;margin:auto;color:#ccc">
+<p class="center">
 
 Muchos grupos simplemente tocan canciones.
 
@@ -429,17 +471,15 @@ Muchos grupos simplemente tocan canciones.
 
 Nosotros diseñamos la experiencia musical del evento.
 
-<br><br>
-
-Adaptamos el repertorio, el ritmo y la energía para que:
-
-<br><br>
-
-✔ todos los invitados se sientan incluidos  
-✔ el ambiente crezca de forma natural  
-✔ el evento se recuerde durante años
-
 </p>
+
+<div class="checks center">
+
+<div>✔ todos los invitados se sientan incluidos</div>
+<div>✔ el ambiente crezca de forma natural</div>
+<div>✔ el evento se recuerde durante años</div>
+
+</div>
 
 </div>
 
@@ -467,11 +507,11 @@ Si tienes una fecha concreta, consúltanos disponibilidad.
 
 <!-- CTA FINAL -->
 
-<div class="section hero">
+<div class="section center">
 
 <h2>Haz que tu evento se recuerde</h2>
 
-<p class="subtitle">
+<p>
 
 La música en directo es lo que transforma una reunión en una fiesta.
 
@@ -481,13 +521,11 @@ Si quieres asegurarte de que tus invitados disfruten…
 
 </p>
 
-<a class="button" href="mailto:contacto@limitepop.com?subject=Consulta%20evento%20L%C3%ADmite%20Pop%20Premium">
-
+<a class="button" href="mailto:contacto@limitepop.com">
 Consultar disponibilidad
-
 </a>
 
-<p style="color:#aaa;margin-top:10px">
+<p style="margin-top:10px;color:#aaa">
 
 Te respondemos en menos de 24h.
 
@@ -495,11 +533,38 @@ Te respondemos en menos de 24h.
 
 </div>
 
+<!-- CONTACTO -->
+
+<div class="contact">
+
+<a class="button" href="mailto:contacto@limitepop.com">Contactar</a>
+
+<p>Email: contacto@limitepop.com</p>
+
+<p>629789876</p>
+<p>655954689</p>
+
+</div>
+
 <footer>
 
-Límite Pop Premium · Música en directo para eventos privados
+Limite Pop Premium · Música en directo para eventos privados
 
 </footer>
+
+</div>
+
+<!-- WHATSAPP -->
+
+<div class="whatsapp">
+
+<div class="whatsapp-text">Contacta ahora</div>
+
+<a href="https://wa.me/34629789876" target="_blank">
+
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+
+</a>
 
 </div>
 
