@@ -70,16 +70,6 @@ margin-top:30px;
 transition:0.3s;
 }
 
-.button:visited{
-color:#ffffff !important;
-}
-
-.button:hover{
-background:#ff7ed6;
-transform:translateY(-3px);
-color:#ffffff !important;
-}
-
 .button:hover{
 background:#ff7ed6;
 transform:translateY(-3px);
@@ -113,6 +103,18 @@ margin-top:40px;
 .card{
 background:#111;
 padding:30px;
+border-radius:10px;
+}
+
+.photo-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+margin-top:40px;
+}
+
+.photo-grid img{
+width:100%;
 border-radius:10px;
 }
 
@@ -180,8 +182,8 @@ margin-top:60px;
 max-width:800px;
 width:100%;
 border-radius:10px;
-}  
-  
+}
+
 footer{
 text-align:center;
 margin-top:80px;
@@ -192,18 +194,9 @@ color:#666;
 
 .whatsapp{
 position:fixed;
-left:20px;
+right:20px;
 bottom:20px;
 z-index:999;
-text-align:center;
-}
-
-.whatsapp-text{
-background:#E05BB5;
-padding:6px 12px;
-border-radius:8px;
-font-size:12px;
-margin-bottom:6px;
 }
 
 .whatsapp img{
@@ -261,9 +254,7 @@ Consultar disponibilidad
 <p class="center">Nada explica mejor lo que hacemos que verlo.</p>
 
 <video controls>
-
 <source src="video1.mp4" type="video/mp4">
-
 </video>
 
 </div>
@@ -329,6 +320,16 @@ Sabemos cuándo empezar elegante y cuándo subir la energía para que la fiesta 
 
 </div>
 
+<!-- NUEVAS FOTOS -->
+
+<div class="photo-grid">
+
+<img src="foto2.jpg" alt="Límite Pop concierto">
+
+<img src="foto3.jpg" alt="Límite Pop en directo">
+
+</div>
+
 </div>
 
 <!-- IMAGINA -->
@@ -368,9 +369,7 @@ Ese es el tipo de evento que creamos.
 <h2>Lo que pasa cuando empieza la música</h2>
 
 <video controls>
-
 <source src="video2.mp4" type="video/mp4">
-
 </video>
 
 </div>
@@ -384,48 +383,36 @@ Ese es el tipo de evento que creamos.
 <div class="pricing">
 
 <div class="price-card">
-
 <h3>ELEGANT LIVE</h3>
-
 <p>Música en directo elegante para eventos privados.</p>
-
 <ul>
 <li>90 minutos de actuación</li>
 <li>Repertorio adaptable</li>
 <li>Sonido profesional</li>
 <li>Ambiente elegante</li>
 </ul>
-
 </div>
 
 <div class="price-card">
-
 <h3>PREMIUM EXPERIENCE ⭐</h3>
-
 <p>La opción más elegida.</p>
-
 <ul>
 <li>2 horas de actuación</li>
 <li>Música a la carta</li>
 <li>Diseño musical del evento</li>
 <li>Peticiones especiales</li>
 </ul>
-
 </div>
 
 <div class="price-card">
-
 <h3>SIGNATURE PRIVATE SHOW</h3>
-
 <p>Experiencia musical exclusiva.</p>
-
 <ul>
 <li>Hasta 2 horas de actuación</li>
 <li>Repertorio personalizado</li>
 <li>Diseño completo del evento</li>
 <li>Máxima personalización</li>
 </ul>
-
 </div>
 
 </div>
@@ -467,13 +454,11 @@ Cumpleaños
 </div>
 
 </div>
-  
+
 <div class="group-photo">
-
 <img src="foto1.jpg" alt="Límite Pop Premium">
-
 </div>
-  
+
 <!-- DIFERENCIACION -->
 
 <div class="section">
@@ -500,28 +485,6 @@ Nosotros diseñamos la experiencia musical del evento.
 
 </div>
 
-<!-- URGENCIA -->
-
-<div class="section">
-
-<div class="urgency">
-
-<h2>Las fechas se reservan con meses de antelación</h2>
-
-<p>
-
-Solo realizamos un número limitado de eventos cada temporada.
-
-<br><br>
-
-Si tienes una fecha concreta, consúltanos disponibilidad.
-
-</p>
-
-</div>
-
-</div>
-
 <!-- CTA FINAL -->
 
 <div class="section center">
@@ -538,7 +501,7 @@ Si quieres asegurarte de que tus invitados disfruten…
 
 </p>
 
-<a class="button" href="mailto:contacto@limitepop.com?subject=Consulta%20evento%20Limite%20Pop%20Premium&body=Hola,%0A%0AEstoy%20organizando%20un%20evento%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20L%C3%ADmite%20Pop%20Premium.%0A%0AFecha%20del%20evento:%0ALugar:%0AN%C3%BAmero%20aproximado%20de%20invitados:%0A%0AGracias.">
+<a class="button" href="mailto:contacto@limitepop.com">
 Consultar disponibilidad
 </a>
 
@@ -552,14 +515,11 @@ Te respondemos en menos de 24h.
 
 <div class="contact">
 
-<a class="button" href="mailto:contacto@limitepop.com?subject=Consulta%20evento%20Limite%20Pop%20Premium&body=Hola,%0A%0AEstoy%20organizando%20un%20evento%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20L%C3%ADmite%20Pop%20Premium.%0A%0AFecha%20del%20evento:%0ALugar:%0AN%C3%BAmero%20aproximado%20de%20invitados:%0A%0AGracias.">
-Contactar
-</a>
+<a class="button" href="mailto:contacto@limitepop.com">Contactar</a>
 
 <p>Email: <a href="mailto:contacto@limitepop.com">contacto@limitepop.com</a></p>
 
 <p><a href="tel:+34629789876">629 789 876</a></p>
-
 <p><a href="tel:+34655954689">655 954 689</a></p>
 
 </div>
@@ -575,15 +535,9 @@ Limite Pop Premium · Música en directo para eventos privados
 <!-- WHATSAPP -->
 
 <div class="whatsapp">
-
-<div class="whatsapp">
-
 <a href="https://wa.me/34629789876" target="_blank">
-
 <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
-
 </a>
-
 </div>
 
 </body>
