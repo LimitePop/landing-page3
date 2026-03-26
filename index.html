@@ -84,13 +84,32 @@ margin-top:25px;
 color:#bbb;
 }
 
+/* VIDEO WRAPPER NUEVO */
+
+.video-wrapper{
+position:relative;
+max-width:800px;
+margin:auto;
+margin-top:30px;
+}
+
 video{
 width:100%;
-max-width:800px;
-display:block;
-margin:auto;
 border-radius:10px;
-margin-top:30px;
+display:block;
+}
+
+.sound-btn{
+position:absolute;
+bottom:15px;
+right:15px;
+background:rgba(0,0,0,0.6);
+border:none;
+color:white;
+font-size:18px;
+padding:10px 12px;
+border-radius:50%;
+cursor:pointer;
 }
 
 .columns{
@@ -117,7 +136,6 @@ width:100%;
 border-radius:10px;
 }
 
-/* 🔥 ARREGLO PERFECTO AQUÍ */
 .problem-text{
 max-width:600px;
 margin:0 auto;
@@ -242,16 +260,14 @@ Consultar disponibilidad
 </a>
 
 <div class="trust">
-
 ✔ Eventos privados  
 ✔ Empresas  
 ✔ Bodas y celebraciones
-
 </div>
 
 </div>
 
-<!-- VIDEO -->
+<!-- VIDEO 1 -->
 
 <div class="section">
 
@@ -259,13 +275,16 @@ Consultar disponibilidad
 
 <p class="center">Nada explica mejor lo que hacemos que verlo.</p>
 
-<video controls>
+<div class="video-wrapper">
+<video class="autoplay-video" muted playsinline preload="none">
 <source src="video1.mp4" type="video/mp4">
 </video>
+<button class="sound-btn">🔇</button>
+</div>
 
 </div>
 
-<!-- PROBLEMA (ARREGLADO PERFECTO) -->
+<!-- PROBLEMA -->
 
 <div class="section">
 
@@ -274,11 +293,8 @@ Consultar disponibilidad
 <div class="center problem-text">
 
 <div>Un éxito absoluto</div>
-
 <div>o simplemente una reunión más.</div>
-
 <div>Muchos grupos tocan canciones.</div>
-
 <div>Pero pocos saben leer el ambiente y adaptarse al público.</div>
 
 </div>
@@ -344,15 +360,18 @@ Ese es el tipo de evento que creamos.
 
 </div>
 
-<!-- MOMENTOS -->
+<!-- VIDEO 2 -->
 
 <div class="section">
 
 <h2>Lo que pasa cuando empieza la música</h2>
 
-<video controls>
+<div class="video-wrapper">
+<video class="autoplay-video" muted playsinline preload="none">
 <source src="video2.mp4" type="video/mp4">
 </video>
+<button class="sound-btn">🔇</button>
+</div>
 
 </div>
 
@@ -495,9 +514,7 @@ Te respondemos en menos de 24h.
 </div>
 
 <footer>
-
 Limite Pop Premium · Música en directo para eventos privados
-
 </footer>
 
 </div>
@@ -507,6 +524,36 @@ Limite Pop Premium · Música en directo para eventos privados
 <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
 </a>
 </div>
+
+<script>
+
+// AUTOPLAY SCROLL
+const videos = document.querySelectorAll('.autoplay-video');
+
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.play();
+}else{
+entry.target.pause();
+}
+});
+},{threshold:0.6});
+
+videos.forEach(v=>observer.observe(v));
+
+// BOTÓN SONIDO
+document.querySelectorAll('.video-wrapper').forEach(wrapper=>{
+const video = wrapper.querySelector('video');
+const btn = wrapper.querySelector('.sound-btn');
+
+btn.addEventListener('click',()=>{
+video.muted = !video.muted;
+btn.textContent = video.muted ? "🔇" : "🔊";
+});
+});
+
+</script>
 
 </body>
 </html>
